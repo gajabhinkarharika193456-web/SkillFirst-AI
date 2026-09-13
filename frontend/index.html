@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SkillFirst AI - Turn real-world skills into verified opportunities with AI-powered skill recognition, job matching and fair remuneration." />
+  <title>SkillFirst AI — Your Skill Speaks. AI Recognizes. You Get Paid.</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="SkillFirst AI home">
+        <span class="logo-mark"><i class="fa-solid fa-bolt"></i></span>
+        <span class="logo-text">SkillFirst <span class="accent">AI</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#how">How It Works</a>
+        <a href="#workers">For Workers</a>
+        <a href="#customers">For Customers</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-ghost" id="loginBtn">Login</button>
+        <button class="btn btn-primary" id="getStartedBtn">Get Started</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="badge"><i class="fa-solid fa-sparkles"></i> AI-powered skill recognition</span>
+        <h1>Your Skill Speaks. <span class="accent">AI Recognizes.</span> You Get Paid.</h1>
+        <p class="hero-sub">
+          Turn real-world skills into verified opportunities with AI-powered
+          skill recognition, job matching and fair remuneration.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg" id="imWorkerBtn">
+            <i class="fa-solid fa-screwdriver-wrench"></i> I'm a Worker
+          </button>
+          <button class="btn btn-outline btn-lg" id="imCustomerBtn">
+            <i class="fa-solid fa-user-tie"></i> I'm a Customer
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>3</strong><span>Skill categories</span></div>
+          <div><strong>100%</strong><span>Voice-first</span></div>
+          <div><strong>0</strong><span>Resumes needed</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="voice-card">
+          <div class="voice-header">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="voice-title">Voice Input</span>
+          </div>
+
+          <div class="voice-bubble">
+            <i class="fa-solid fa-microphone"></i>
+            <p>"I can repair fans, switch boards and house wiring."</p>
+          </div>
+
+          <div class="ai-detected">
+            <p class="ai-label"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Detected Skills</p>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Fan Repair</li>
+              <li><i class="fa-solid fa-check"></i> Switch Board Repair</li>
+              <li><i class="fa-solid fa-check"></i> House Wiring</li>
+            </ul>
+          </div>
+
+          <div class="score-block">
+            <span>Skill Score</span>
+            <strong>87<small>/100</small></strong>
+            <div class="score-bar"><span style="width:87%"></span></div>
+          </div>
+        </div>
+        <div class="glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOW IT WORKS ================= -->
+  <section class="section" id="how">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How It Works</span>
+        <h2>From spoken words to fair pay in four steps.</h2>
+        <p>A connected workflow that replaces resumes with real, verified skills.</p>
+      </div>
+
+      <div class="steps">
+        <article class="step-card">
+          <div class="step-num">01</div>
+          <i class="fa-solid fa-microphone-lines step-icon"></i>
+          <h3>Speak Your Skill</h3>
+          <p>Tell SkillFirst AI what you can do using your voice.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-num">02</div>
+          <i class="fa-solid fa-shield-halved step-icon"></i>
+          <h3>AI Verifies Your Skill</h3>
+          <p>Answer practical questions and receive a skill score.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-num">03</div>
+          <i class="fa-solid fa-route step-icon"></i>
+          <h3>Get Matched With Work</h3>
+          <p>AI finds jobs that match your skills and location.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-num">04</div>
+          <i class="fa-solid fa-indian-rupee-sign step-icon"></i>
+          <h3>Get Fairly Paid</h3>
+          <p>Receive a transparent remuneration recommendation.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WORKER SECTION ================= -->
+  <section class="section section-alt" id="workers">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">For Workers</span>
+        <h2>Your Skills Matter More Than Your Resume.</h2>
+        <p>No degrees. No certificates. No resumes. Just your real skills — recognized by AI.</p>
+      </div>
+
+      <div class="worker-grid">
+        <div class="worker-features">
+          <div class="feature-row">
+            <i class="fa-solid fa-microphone"></i>
+            <div><h4>Voice skill declaration</h4><p>Describe your skills in your own language.</p></div>
+          </div>
+          <div class="feature-row">
+            <i class="fa-solid fa-clipboard-check"></i>
+            <div><h4>Skill assessment</h4><p>Practical questions scored by AI.</p></div>
+          </div>
+          <div class="feature-row">
+            <i class="fa-solid fa-gauge-high"></i>
+            <div><h4>Skill score</h4><p>A transparent, verifiable score out of 100.</p></div>
+          </div>
+          <div class="feature-row">
+            <i class="fa-solid fa-briefcase"></i>
+            <div><h4>Job recommendations</h4><p>Matched to your skills and location.</p></div>
+          </div>
+          <div class="feature-row">
+            <i class="fa-solid fa-wallet"></i>
+            <div><h4>Earnings & remuneration</h4><p>Fair, transparent pay recommendations.</p></div>
+          </div>
+          <div class="feature-row">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <div><h4>Work history</h4><p>Track every completed job in one place.</p></div>
+          </div>
+
+          <button class="btn btn-primary btn-lg" id="startAssessmentBtn">
+            <i class="fa-solid fa-play"></i> Start Skill Assessment
+          </button>
+        </div>
+
+        <!-- Worker Dashboard -->
+        <aside class="dashboard" aria-label="Worker dashboard preview">
+          <div class="dash-head">
+            <div class="avatar">R</div>
+            <div>
+              <h3>Ravi</h3>
+              <p>Electrician</p>
+            </div>
+            <span class="pill pill-green">Verified</span>
+          </div>
+
+          <div class="dash-stats">
+            <div class="stat"><span>Skill Score</span><strong>87<small>/100</small></strong></div>
+            <div class="stat"><span>Jobs Completed</span><strong>12</strong></div>
+            <div class="stat"><span>Average Rating</span><strong>4.7<small>/5</small></strong></div>
+            <div class="stat"><span>Est. Earnings</span><strong>₹8,450</strong></div>
+          </div>
+
+          <div class="recent-job">
+            <div class="rj-head"><span>Recent Job</span><span class="pill pill-green">Completed</span></div>
+            <p class="rj-title">Emergency Fan Repair</p>
+            <p class="rj-amount">₹575</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CUSTOMER SECTION ================= -->
+  <section class="section" id="customers">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">For Customers</span>
+        <h2>Find the right skilled worker, fast.</h2>
+        <p>Tell us the job. Our AI matches you with verified workers near you.</p>
+      </div>
+
+      <div class="customer-grid">
+        <form class="card form-card" id="customerForm" novalidate>
+          <h3><i class="fa-solid fa-clipboard-list"></i> Job Request</h3>
+
+          <label for="jobType">Service / Job Type</label>
+          <select id="jobType" required>
+            <option value="">Select a service</option>
+            <option value="Emergency Fan Repair">Emergency Fan Repair</option>
+            <option value="Switch Board Repair">Switch Board Repair</option>
+            <option value="House Wiring">House Wiring</option>
+            <option value="Pipe Leakage Fix">Pipe Leakage Fix</option>
+            <option value="Tap Installation">Tap Installation</option>
+            <option value="Blouse Stitching">Blouse Stitching</option>
+            <option value="Pant Alteration">Pant Alteration</option>
+          </select>
+
+          <label for="problemDesc">Problem Description</label>
+          <textarea id="problemDesc" rows="3" placeholder="Describe what's wrong..." required></textarea>
+
+          <label for="location">Location</label>
+          <select id="location" required>
+            <option value="">Select a city</option>
+            <option value="Warangal">Warangal</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Karimnagar">Karimnagar</option>
+            <option value="Nizamabad">Nizamabad</option>
+          </select>
+
+          <label for="urgency">Urgency</label>
+          <select id="urgency" required>
+            <option value="">Select urgency</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-magnifying-glass"></i> Find Best Worker
+          </button>
+        </form>
+
+        <div class="matches-col">
+          <h3><i class="fa-solid fa-user-check"></i> AI Matching Results</h3>
+          <div id="matchesContainer" class="matches">
+            <p class="empty-state">
+              <i class="fa-solid fa-robot"></i>
+              Submit a job request to see AI-matched workers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= REMUNERATION ================= -->
+  <section class="section section-alt" id="remuneration">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Fair Pay</span>
+        <h2>Transparent remuneration, always.</h2>
+        <p>Every rupee explained. No hidden charges. No surprises.</p>
+      </div>
+
+      <div class="remuneration-grid">
+        <div class="card remu-card">
+          <h3><i class="fa-solid fa-calculator"></i> Recommended Remuneration</h3>
+
+          <ul class="remu-list">
+            <li><span>Base Work</span><strong>₹400</strong></li>
+            <li><span>Complexity Bonus</span><strong>₹100</strong></li>
+            <li><span>Emergency Bonus</span><strong>₹50</strong></li>
+            <li><span>Performance Bonus</span><strong>₹25</strong></li>
+          </ul>
+
+          <div class="remu-total">
+            <span>Total Recommended</span>
+            <strong>₹575</strong>
+          </div>
+
+          <div class="payment-status">
+            <span class="pill pill-blue"><i class="fa-solid fa-circle-notch fa-spin"></i> Payment Initiated (Demo)</span>
+          </div>
+
+          <p class="note">
+            <i class="fa-solid fa-circle-info"></i>
+            Prototype recommendation. Production version can integrate UPI / payment gateway APIs.
+          </p>
+        </div>
+
+        <div class="card info-card">
+          <h3><i class="fa-solid fa-lightbulb"></i> Why this amount?</h3>
+          <p>
+            SkillFirst AI calculates fair pay using three transparent signals:
+          </p>
+          <ul class="info-list">
+            <li><i class="fa-solid fa-check"></i> Worker's verified skill score</li>
+            <li><i class="fa-solid fa-check"></i> Job complexity &amp; urgency level</li>
+            <li><i class="fa-solid fa-check"></i> Local market rate for the trade</li>
+          </ul>
+          <p class="muted">No surge pricing. No hidden deductions. Always fair.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="logo">
+          <span class="logo-mark"><i class="fa-solid fa-bolt"></i></span>
+          <span class="logo-text">SkillFirst <span class="accent">AI</span></span>
+        </a>
+        <p class="footer-tag">"Recognize skills. Connect opportunities. Reward work."</p>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#how">About</a></li>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#workers">Workers</a></li>
+          <li><a href="#customers">Customers</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 SkillFirst AI. All rights reserved.</p>
+      <p class="muted">Frontend prototype — demo data only.</p>
+    </div>
+  </footer>
+
+  <!-- ================= ASSESSMENT MODAL ================= -->
+  <div class="modal-backdrop" id="assessmentModal" role="dialog" aria-modal="true" aria-labelledby="assessmentTitle">
+    <div class="modal">
+      <button class="modal-close" id="closeAssessment" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-step" id="step-profession">
+        <span class="eyebrow">Step 1 of 3</span>
+        <h2 id="assessmentTitle">Choose your profession</h2>
+        <p class="muted">Select the trade that best matches your skills.</p>
+
+        <div class="profession-grid">
+          <button class="profession-card" data-profession="Electrician">
+            <i class="fa-solid fa-plug"></i>
+            <span>Electrician</span>
+          </button>
+          <button class="profession-card" data-profession="Plumber">
+            <i class="fa-solid fa-faucet-drip"></i>
+            <span>Plumber</span>
+          </button>
+          <button class="profession-card" data-profession="Tailor">
+            <i class="fa-solid fa-scissors"></i>
+            <span>Tailor</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-step hidden" id="step-voice">
+        <span class="eyebrow">Step 2 of 3</span>
+        <h2>Describe your skills</h2>
+        <p class="muted">Tap the mic and speak. Or type if your browser doesn't support voice.</p>
+
+        <div class="mic-wrap">
+          <button class="mic-btn" id="micBtn" aria-label="Start voice recording">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+          <p class="mic-status" id="micStatus">Tap to start speaking</p>
+        </div>
+
+        <label for="spokenText" class="sr-only">Your spoken skills</label>
+        <textarea id="spokenText" rows="3" placeholder='Example: "I repair fans and switch boards"'></textarea>
+
+        <div class="voice-actions">
+          <button class="btn btn-outline" id="useExampleBtn">Use Example</button>
+          <button class="btn btn-primary" id="analyzeVoiceBtn">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Analyze Skills
+          </button>
+        </div>
+
+        <div class="detected-box hidden" id="detectedBox">
+          <p><strong>Profession:</strong> <span id="detectedProfession">—</span></p>
+          <p><strong>Detected Skills:</strong></p>
+          <ul id="detectedSkillsList"></ul>
+        </div>
+      </div>
+
+      <div class="modal-step hidden" id="step-quiz">
+        <span class="eyebrow">Step 3 of 3</span>
+        <h2>Quick skill assessment</h2>
+        <p class="muted" id="questionText">Loading question...</p>
+
+        <div class="options" id="optionsContainer"></div>
+
+        <div class="score-result hidden" id="scoreResult">
+          <h3>Your Skill Score</h3>
+          <div class="score-breakdown">
+            <div><span>Technical Knowledge</span><strong id="sTech">—</strong></div>
+            <div><span>Practical Understanding</span><strong id="sPrac">—</strong></div>
+            <div><span>Safety Awareness</span><strong id="sSafe">—</strong></div>
+            <div><span>Experience</span><strong id="sExp">—</strong></div>
+          </div>
+          <div class="final-score">
+            Final Skill Score: <strong id="finalScore">—</strong>
+          </div>
+          <button class="btn btn-primary btn-block" id="finishAssessmentBtn">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TOAST ================= -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
